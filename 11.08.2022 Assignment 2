@@ -1,0 +1,11 @@
+int arrangeCoins(int n){
+    
+    int row=1,k=0,coins;
+    coins=n;
+    while(coins>=row){
+        coins = coins - row;
+        k++;
+        row++;
+    }
+    return k;
+}
